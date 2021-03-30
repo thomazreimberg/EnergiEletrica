@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\treim\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {}
+    "C:\\Users\\thomas.araujo\\source\\thomazreimberg\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\treim\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {
+    "C:\\Users\\thomas.araujo\\source\\thomazreimberg\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\treim\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
+        "projectUniqueName": "C:\\Users\\thomas.araujo\\source\\thomazreimberg\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
         "projectName": "EnergiaEletrica",
-        "projectPath": "C:\\Users\\treim\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
-        "packagesPath": "C:\\Users\\treim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\treim\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\obj\\",
+        "projectPath": "C:\\Users\\thomas.araujo\\source\\thomazreimberg\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
+        "packagesPath": "C:\\Users\\thomas.araujo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thomas.araujo\\source\\thomazreimberg\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\treim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\thomas.araujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -60,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
