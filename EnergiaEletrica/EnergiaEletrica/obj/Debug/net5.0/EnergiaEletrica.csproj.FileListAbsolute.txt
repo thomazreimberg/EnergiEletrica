@@ -1,0 +1,16 @@
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\EnergiaEletrica.exe
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\EnergiaEletrica.deps.json
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\EnergiaEletrica.runtimeconfig.json
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\EnergiaEletrica.runtimeconfig.dev.json
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\EnergiaEletrica.dll
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\ref\EnergiaEletrica.dll
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\bin\Debug\net5.0\EnergiaEletrica.pdb
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.csprojAssemblyReference.cache
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.AssemblyInfoInputs.cache
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.AssemblyInfo.cs
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.csproj.CoreCompileInputs.cache
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.dll
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\ref\EnergiaEletrica.dll
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.pdb
+C:\Users\treim\source\repos\EnergiaEletrica\EnergiaEletrica\obj\Debug\net5.0\EnergiaEletrica.genruntimeconfig.cache
