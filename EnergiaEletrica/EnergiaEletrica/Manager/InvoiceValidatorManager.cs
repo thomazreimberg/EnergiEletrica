@@ -19,6 +19,12 @@ namespace EnergiaEletrica.Manager
 
                 foreach (string record in content)
                 {
+                    if (record.Length)
+                    {
+                        RecordError recordError = new RecordError();
+                        recordError.ShowValidationError("Tamanho",posicao, "campo")
+                    }
+
                     RecordConverter recordConverter = new RecordConverter();
                     InvoiceData separeteContent = recordConverter.ToInvoiceData(record);
 
@@ -27,7 +33,6 @@ namespace EnergiaEletrica.Manager
 
                     if (validated)
                         invoiceData.Add(separeteContent);
-
                 }
 
                 return invoiceData;
