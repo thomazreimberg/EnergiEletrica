@@ -11,7 +11,7 @@ namespace EnergiaEletrica.Business
         //Aplica as regras de validação dos campos do invoice.data (seguir o exemplo do PDF "Semana 8 - Invoice File)
         public bool Validate(InvoiceData recordContent)
         {
-
+            return true;
         }
     }
 }
