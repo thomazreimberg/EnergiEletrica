@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felip\\Source\\Repos\\EnergiaEletrica1\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {}
+    "C:\\Users\\thomas.araujo\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felip\\Source\\Repos\\EnergiaEletrica1\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {
+    "C:\\Users\\thomas.araujo\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\EnergiaEletrica1\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
+        "projectUniqueName": "C:\\Users\\thomas.araujo\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
         "projectName": "EnergiaEletrica",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\EnergiaEletrica1\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\EnergiaEletrica1\\EnergiaEletrica\\EnergiaEletrica\\obj\\",
+        "projectPath": "C:\\Users\\thomas.araujo\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica.csproj",
+        "packagesPath": "C:\\Users\\thomas.araujo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thomas.araujo\\source\\repos\\EnergiaEletrica\\EnergiaEletrica\\EnergiaEletrica\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\thomas.araujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
