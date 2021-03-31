@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EnergiaEletrica
 {
-    class InvoiceData
+    public class InvoiceData
     {
-        //Molde
         public int Cliente { get; set; }
         public int Cep { get; set; }
         public string Numero { get; set; }
