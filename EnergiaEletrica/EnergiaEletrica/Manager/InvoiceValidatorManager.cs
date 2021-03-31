@@ -27,6 +27,7 @@ namespace EnergiaEletrica.Manager
 
                     if (validated)
                         invoiceData.Add(separeteContent);
+
                 }
 
                 return invoiceData;

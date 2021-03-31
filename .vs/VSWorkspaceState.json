@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EnergiaEletrica"
   ],
+  "SelectedNode": "\\EnergiaEletrica\\EnergiaEletrica.sln",
   "PreviewInSolutionExplorer": false
 }

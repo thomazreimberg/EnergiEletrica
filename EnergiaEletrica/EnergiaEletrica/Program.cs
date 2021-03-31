@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using EnergiaEletrica.Business;
 using EnergiaEletrica.Manager;
 namespace EnergiaEletrica
@@ -12,9 +13,7 @@ namespace EnergiaEletrica
             //Após o input InvoiceValidatorManager(passa o input do LoadFileContent)
 
             //Exibir a resposta
-
-            RecordConverter model = new RecordConverter();
-            model.ToInvoiceData("=");
+            
         }
     }
 }
