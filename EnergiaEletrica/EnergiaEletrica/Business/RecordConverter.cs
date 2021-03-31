@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace EnergiaEletrica.Business
 {
-    class RecordConverter
+    public class RecordConverter
     {
         //Realiza a conversão de cada item do invoice.data
         //(o loop passando cada linha será feito no método que chamar essa classe)
+        public InvoiceData ToInvoiceData(string record)
+        {
+
+        }
     }
 }

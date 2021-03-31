@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace EnergiaEletrica.Business
 {
-    class RecordValidator
+    public class RecordValidator
     {
         //Aplica as regras de validação dos campos do invoice.data (seguir o exemplo do PDF "Semana 8 - Invoice File)
+        public bool Validate(InvoiceData recordContent)
+        {
 
+        }
     }
 }
