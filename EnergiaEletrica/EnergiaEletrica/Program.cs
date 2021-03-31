@@ -14,7 +14,7 @@ namespace EnergiaEletrica
             //Exibir a resposta
 
             RecordConverter model = new RecordConverter();
-            model.ToInvoiceData("");
+            model.ToInvoiceData("=");
         }
     }
 }
