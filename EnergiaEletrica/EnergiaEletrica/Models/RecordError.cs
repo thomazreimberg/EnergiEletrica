@@ -24,7 +24,6 @@ namespace EnergiaEletrica
             this.Field = field;
         }
 
-        //ShowValidationError retorna uma string com o texto formatado com a mensagem de erro
         public string ShowValidationError ()
         {
             return Error + " na linha: " + Line + " no campo: " + Field;
