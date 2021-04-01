@@ -12,8 +12,6 @@ namespace EnergiaEletrica.Business
         //(o loop passando cada linha será feito no método que chamar essa classe)
         public InvoiceData ToInvoiceData(string record)
         {
-           // string example = @"00000348340483300100051Bloco 1A apto 44    ##SSP29Março     20211544230007A16894030000840001550";
-
             InvoiceData model = new InvoiceData();
             model.Cliente = record.Substring(0, 10);
             model.Cep = record.Substring(10, 8);

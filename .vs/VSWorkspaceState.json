@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EnergiaEletrica"
+    "\\EnergiaEletrica",
+    "\\EnergiaEletrica\\EnergiaEletrica",
+    "\\EnergiaEletrica\\EnergiaEletrica\\Business",
+    "\\EnergiaEletrica\\EnergiaEletrica\\Manager",
+    "\\EnergiaEletrica\\EnergiaEletrica\\Models"
   ],
   "SelectedNode": "\\EnergiaEletrica\\EnergiaEletrica.sln",
   "PreviewInSolutionExplorer": false

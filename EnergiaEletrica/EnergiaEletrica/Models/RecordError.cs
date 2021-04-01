@@ -12,6 +12,11 @@ namespace EnergiaEletrica
         public int Line { get; set; }
         public string Field { get; set; }
 
+        public RecordError()
+        {
+
+        }
+
         public RecordError(string error, int line, string field)  
         {
             this.Error = error;
@@ -22,7 +27,7 @@ namespace EnergiaEletrica
         //ShowValidationError retorna uma string com o texto formatado com a mensagem de erro
         public string ShowValidationError ()
         {
-            throw new ArgumentException(Error + " na linha: " + Line + " no campo: " + Field);
+            return Error + " na linha: " + Line + " no campo: " + Field;
         }
     }
 

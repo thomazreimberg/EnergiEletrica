@@ -9,33 +9,33 @@ namespace EnergiaEletrica.Manager
 {
     public class InvoiceValidatorManager
     {
-        public List<InvoiceData> Validate(List<string> content)
+        public List<RecordError> Validate(List<string> content)
         {
-            List<InvoiceData> invoiceData = new List<InvoiceData>();
-
-            try
+            List<RecordError> list = new List<RecordError>();
+            foreach (string record in content)
             {
-                bool validated = true;
-
-                foreach (string record in content)
+                try
                 {
                     RecordConverter recordConverter = new RecordConverter();
                     InvoiceData separeteContent = recordConverter.ToInvoiceData(record);
 
                     RecordValidator recordValidator = new RecordValidator();
-                    validated = recordValidator.Validate(separeteContent);
-
-                    if (validated)
-                        invoiceData.Add(separeteContent);
+                    recordValidator.Validate(separeteContent);
+                }
+                catch (Exception.RecordValidatorException ex)
+                {
+                    foreach (RecordError item in ex.Model)
+                    {
+                        list.Add(item);
+                    }
+                }
+                catch (System.Exception)
+                {
 
                 }
+            }
 
-                return invoiceData;
-            }
-            catch (Exception)
-            {
-                return invoiceData;
-            }
+            return list;
         }
     }
 }
