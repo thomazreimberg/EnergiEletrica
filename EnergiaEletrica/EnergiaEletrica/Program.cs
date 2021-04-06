@@ -19,7 +19,7 @@ namespace EnergiaEletrica
             //Exibir a resposta
 
             // ---------------- TESTE -----------------------
-            string path = @"C:\Users\Public\Desafio\Semana 8 - Invoice.data";
+            string path = @"C:\Users\treim\OneDrive\Documentos\Home\Curso Bruno Programação\Semana 8 - Invoice.data";
             List<string> lines = File.ReadAllLines(path).ToList();
 
             InvoiceValidatorManager manager = new InvoiceValidatorManager();

@@ -16,9 +16,18 @@ namespace EnergiaEletrica.Manager
             {
                 try
                 {
+                    if (record.Length < 95 || record.Length > 95)
+                    {
+                        RecordError model = new RecordError();
+                        model.Error = "Tamanho do registro inválido.";
+                        model.Line = content.IndexOf(record);
+                        model.Field = "Linha";
+                        list.Add(model);
+                    }
+
                     RecordConverter recordConverter = new RecordConverter();
                     InvoiceData separeteContent = recordConverter.ToInvoiceData(record);
-
+                    
                     RecordValidator recordValidator = new RecordValidator();
                     recordValidator.Validate(separeteContent, content.IndexOf(record));
                 }

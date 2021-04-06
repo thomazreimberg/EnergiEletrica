@@ -14,11 +14,11 @@ namespace EnergiaEletrica.Business
         public void Validate(InvoiceData recordContent, int line)
         {
             List<RecordError> list = new List<RecordError>();
-
+            RecordError model = new RecordError();
+            
             //Cliente
             if (recordContent.Cliente.Trim().Length != 10)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Cliente";
@@ -27,7 +27,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Cliente,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permite tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Cliente";
@@ -35,7 +34,6 @@ namespace EnergiaEletrica.Business
             }
             if (recordContent.Cliente.Contains("#"))
             {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Cliente";
@@ -45,7 +43,6 @@ namespace EnergiaEletrica.Business
             //Cep
             if (recordContent.Cep.Trim().Length != 8)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "CEP";
@@ -54,7 +51,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Cep,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "CEP";
@@ -64,7 +60,6 @@ namespace EnergiaEletrica.Business
             //Número
             if (recordContent.Numero.Trim().Length != 5)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Número";
@@ -73,7 +68,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Numero,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Número";
@@ -83,7 +77,6 @@ namespace EnergiaEletrica.Business
             //Complemento
             if (recordContent.Complemento.Length != 20)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Complemento";
@@ -93,7 +86,6 @@ namespace EnergiaEletrica.Business
             //Região
             if (recordContent.Regiao.Trim().Length != 5)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Região";
@@ -103,7 +95,6 @@ namespace EnergiaEletrica.Business
             //Dia
             if (recordContent.Dia.Trim().Length != 2)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Dia";
@@ -112,7 +103,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Dia,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Dia";
@@ -122,17 +112,15 @@ namespace EnergiaEletrica.Business
             //Mês
             if (recordContent.Mes.Length != 10)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
-                model.Field = "Mes";
+                model.Field = "Mês";
                 list.Add(model);
             }
 
             //Ano
             if (recordContent.Ano.Trim().Length != 4)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Ano";
@@ -141,7 +129,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Ano,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Ano";
@@ -151,7 +138,6 @@ namespace EnergiaEletrica.Business
             //Hora
             if (recordContent.Hora.Trim().Length != 2)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Hora";
@@ -160,7 +146,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Hora,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Hora";
@@ -170,7 +155,6 @@ namespace EnergiaEletrica.Business
             //Minuto
             if (recordContent.Minuto.Trim().Length != 2)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Minuto";
@@ -179,7 +163,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Minuto,@"[a-zA-Z]").Count > 0)
 	        {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Minuto";
@@ -189,7 +172,6 @@ namespace EnergiaEletrica.Business
             //Segundo
             if (recordContent.Segundo.Trim().Length != 2)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Segundo";
@@ -198,7 +180,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Segundo, @"[a-zA-Z]").Count > 0)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Segundo";
@@ -208,7 +189,6 @@ namespace EnergiaEletrica.Business
             //Medidor
             if (recordContent.Medidor.Trim().Length != 10)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Medidor";
@@ -218,7 +198,6 @@ namespace EnergiaEletrica.Business
             //Aparelho
             if (recordContent.Aparelho.Trim().Length != 2)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Aparelho";
@@ -227,7 +206,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Aparelho, @"[a-zA-Z]").Count > 0)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não é permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Aparelho";
@@ -237,7 +215,6 @@ namespace EnergiaEletrica.Business
             //Kilo Watts
             if (recordContent.KiloWatts.Trim().Length != 6)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "KiloWatts";
@@ -246,7 +223,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.KiloWatts, @"[a-zA-Z]").Count > 0)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "KiloWatts";
@@ -256,7 +232,6 @@ namespace EnergiaEletrica.Business
             //Custo
             if (recordContent.Custo.Trim().Length != 7)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não atingiu os caracteres necessários";
                 model.Line = line;
                 model.Field = "Custo";
@@ -265,7 +240,6 @@ namespace EnergiaEletrica.Business
 
             if (Regex.Matches(recordContent.Custo, @"[a-zA-Z]").Count > 0)
             {
-                RecordError model = new RecordError();
                 model.Error = "Não permitido tipos não-numéricos";
                 model.Line = line;
                 model.Field = "Custo";
