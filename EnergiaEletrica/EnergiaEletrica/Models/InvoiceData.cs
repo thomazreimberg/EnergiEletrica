@@ -10,7 +10,7 @@ namespace EnergiaEletrica
         public string  Regiao{ get; set; }
         public string Dia { get; set; }
         public string Mes { get; set; }
-        public int Ano { get; set; }
+        public string Ano { get; set; }
         public string Hora { get; set; }
         public string Minuto { get; set; }
         public string Segundo { get; set; }

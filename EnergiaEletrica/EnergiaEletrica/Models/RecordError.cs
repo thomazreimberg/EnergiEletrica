@@ -26,7 +26,7 @@ namespace EnergiaEletrica
 
         public string ShowValidationError ()
         {
-            return Error + " na linha: " + Line + " no campo: " + Field;
+            return @"Linha: " + Line + "\nCampo: " + Field + "\nErro: " + Error;
         }
     }
 

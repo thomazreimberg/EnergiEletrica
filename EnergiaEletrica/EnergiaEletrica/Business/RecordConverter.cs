@@ -20,7 +20,7 @@ namespace EnergiaEletrica.Business
             model.Regiao = record.Substring(43, 5);
             model.Dia = record.Substring(48, 2);
             model.Mes = record.Substring(50, 10);
-            model.Ano = Convert.ToInt32(record.Substring(60, 4));
+            model.Ano = record.Substring(60, 4);
             model.Hora = record.Substring(64, 2);
             model.Minuto = record.Substring(66, 2);
             model.Segundo = record.Substring(68, 2);

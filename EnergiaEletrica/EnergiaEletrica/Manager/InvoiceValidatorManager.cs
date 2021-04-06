@@ -20,18 +20,15 @@ namespace EnergiaEletrica.Manager
                     InvoiceData separeteContent = recordConverter.ToInvoiceData(record);
 
                     RecordValidator recordValidator = new RecordValidator();
-                    recordValidator.Validate(separeteContent);
+                    recordValidator.Validate(separeteContent, content.IndexOf(record));
                 }
                 catch (Exception.RecordValidatorException ex)
                 {
-                    foreach (RecordError item in ex.Model)
-                    {
-                        list.Add(item);
-                    }
+                    list.AddRange(ex.Model);
                 }
-                catch (System.Exception)
+                catch (System.Exception ex)
                 {
-
+                    Console.WriteLine(ex.Message);
                 }
             }
 

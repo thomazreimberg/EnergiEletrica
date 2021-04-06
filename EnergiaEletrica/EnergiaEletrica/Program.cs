@@ -32,6 +32,10 @@ namespace EnergiaEletrica
                     Console.WriteLine(item.ShowValidationError());
                 }
             }
+            else
+            {
+                Console.WriteLine("Done");
+            }
             Console.ReadKey();
         }
     }
