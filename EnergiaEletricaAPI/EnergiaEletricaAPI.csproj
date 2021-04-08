@@ -10,9 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="API\Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="API\" />
-    <Folder Include="Services\Controllers\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
