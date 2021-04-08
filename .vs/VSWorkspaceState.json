@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\EnergiaEletrica",
-    "\\EnergiaEletrica\\EnergiaEletrica",
-    "\\EnergiaEletrica\\EnergiaEletrica\\Business",
-    "\\EnergiaEletrica\\EnergiaEletrica\\Manager",
-    "\\EnergiaEletrica\\EnergiaEletrica\\Models"
+    "\\EnergiaEletricaAPI"
   ],
-  "SelectedNode": "\\EnergiaEletrica\\EnergiaEletrica\\Business\\RecordValidator.cs",
+  "SelectedNode": "\\EnergiaEletrica\\EnergiaEletrica.csproj",
   "PreviewInSolutionExplorer": false
 }

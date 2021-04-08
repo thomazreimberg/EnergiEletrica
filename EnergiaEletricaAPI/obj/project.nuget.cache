@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+le82LyFWjzSuGrkhTDrAD3jetnt9Ef1b54DDl09xvM6yZMXaNZUQ4QsilPANNqgv0qHWXGMUPZPm7YhlGsAwg==",
+  "dgSpecHash": "0ueMqmhOa7eoMtl3+30xJbeoUY8dJoT/x7FgLr7nKErEwQCMDuHONuSQoTZ0z3qG6k982EOUOhaiJ/Wq1GGvNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\treim\\OneDrive\\Documentos\\GitHub\\EnergiaEletrica\\EnergiaEletricaAPI\\EnergiaEletricaAPI.csproj",
+  "projectFilePath": "C:\\Users\\treim\\OneDrive\\Documentos\\GitHub\\EnergiaEletrica2\\EnergiaEletricaAPI\\EnergiaEletricaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\treim\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
   ],
