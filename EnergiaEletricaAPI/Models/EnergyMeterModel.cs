@@ -8,6 +8,9 @@ namespace EnergiaEletricaAPI.Models
 {
     public class EnergyMeterModel
     {
-        public int MyProperty { get; set; }
+        public string EnergyMeterCode { get; set; }
+        public DateTime MeasureDate { get; set; }
+        public int Device { get; set; }
+        public int KiloWatts { get; set; }
     }
 }
