@@ -1,4 +1,7 @@
-﻿using System;
+﻿using EnergiaEletricaAPI.API.Controllers;
+using EnergiaEletricaAPI.Models;
+using System;
+using System.Collections.Generic;
 
 namespace EnergiaEletricaAPI
 {
@@ -6,7 +9,26 @@ namespace EnergiaEletricaAPI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //TESTE 
+            EnergyMeterController controller = new EnergyMeterController();
+            List<ClientModel> list = controller.ModelConverter();
+
+            foreach (ClientModel client in list)
+            {
+                Console.WriteLine(client.ClientCode);
+                Console.WriteLine(client.ZipCode);
+                Console.WriteLine(client.AddressNumber);
+                Console.WriteLine(client.Complement);
+
+                foreach (EnergyMeterModel energy in client.EnergyData)
+                {
+                    Console.WriteLine(energy.EnergyMeterCode);
+                    Console.WriteLine(energy.MeasureDate);
+                    Console.WriteLine(energy.Device);
+                    Console.WriteLine(energy.KiloWatts);
+                }
+                Console.ReadKey();
+            }
         }
 
         /* 
