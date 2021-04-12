@@ -1,7 +1,5 @@
-﻿using EnergiaEletricaAPI.API.Controllers;
-using EnergiaEletricaAPI.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using EnergiaEletricaAPI.Services;
 
 namespace EnergiaEletricaAPI
 {
@@ -9,32 +7,21 @@ namespace EnergiaEletricaAPI
     {
         static void Main(string[] args)
         {
-            //TESTE 
-            EnergyMeterController controller = new EnergyMeterController();
-            List<ClientModel> list = controller.ModelConverter();
-
-            foreach (ClientModel client in list)
+            try
             {
-                Console.WriteLine(client.ClientCode);
-                Console.WriteLine(client.ZipCode);
-                Console.WriteLine(client.AddressNumber);
-                Console.WriteLine(client.Complement);
-
-                foreach (EnergyMeterModel energy in client.EnergyData)
-                {
-                    Console.WriteLine(energy.EnergyMeterCode);
-                    Console.WriteLine(energy.MeasureDate);
-                    Console.WriteLine(energy.Device);
-                    Console.WriteLine(energy.KiloWatts);
-                }
+                ServiceConverter serviceConverter = new ServiceConverter();
+                serviceConverter.GenerateFileConverted();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine(@"Arquivos invoice.data gerado no caminho C:\Users\treim\OneDrive\Documentos\Utils\invoice.data");
                 Console.ReadKey();
             }
+            
         }
-
-        /* 
-         *  - Configurar a rota da API (Controller) para consumir a API do Bruno - Felipe
-            - Criar os modelos para serem carregados com o response da API - Felipe
-            - Criar conversor para converter os objetos de modelos para a txt(string) - Thomaz
-         */
     }
 }
