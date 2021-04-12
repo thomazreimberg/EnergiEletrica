@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\EnergiaEletrica",
-    "\\EnergiaEletricaAPI"
+    "\\EnergiaEletricaAPI",
+    "\\EnergiaEletrica\\Exception",
+    "\\EnergiaEletrica\\Manager",
+    "\\EnergyMeter"
   ],
-  "SelectedNode": "\\EnergiaEletrica\\EnergiaEletrica.csproj",
+  "SelectedNode": "\\EnergiaEletrica\\Manager\\InvoiceValidatorManager.cs",
   "PreviewInSolutionExplorer": false
 }

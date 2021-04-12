@@ -14,6 +14,8 @@ namespace EnergiaEletricaAPI.Services
         public void GenerateFileConverted ()
         {
             StreamWriter invoiceData = new StreamWriter("C:\\Users\\treim\\OneDrive\\Documentos\\Utils\\invoice.data");
+            //StreamWriter invoiceData = new StreamWriter("C:\\Users\\Public\\Desafio\\invoice.data");
+
 
             EnergyMeterController controller = new EnergyMeterController();
             List<ClientModel> list = controller.ModelConverter();
@@ -24,14 +26,22 @@ namespace EnergiaEletricaAPI.Services
             {
                 foreach (EnergyMeterModel energy in client.EnergyData)
                 {
-                    invoiceData.WriteLine(client.ClientCode.ToString().Trim() +
+                    double custo = energy.KiloWatts * 0.2;
+                    invoiceData.WriteLine(client.ClientCode.ToString().Trim().PadLeft(10, '0') +
                                             client.ZipCode.ToString().Trim().Replace("-", "") +
-                                            client.AddressNumber.ToString().Trim() +
-                                            client.Complement.ToString().Trim() +
-                                            energy.EnergyMeterCode.ToString().Trim() +
-                                            energy.MeasureDate.ToString().Trim().Replace("/", "").Replace(" ", "").Replace(":", "") +
-                                            energy.Device.ToString().Trim() +
-                                            energy.KiloWatts.ToString().Trim());
+                                            client.AddressNumber.ToString().Trim().PadLeft(5, '0') +
+                                            client.Complement.ToString().Trim().PadRight(20, ' ') +
+                                            "##SSP" +
+                                            energy.MeasureDate.ToString("dd") +
+                                            "          " +
+                                            energy.MeasureDate.ToString("yyyy") +
+                                            energy.MeasureDate.ToString("hh") +
+                                            energy.MeasureDate.ToString("mm") +
+                                            energy.MeasureDate.ToString("ss") +
+                                            energy.EnergyMeterCode.ToString().Trim().PadLeft(10, '0') +
+                                            energy.Device.ToString().Trim().PadLeft(2, '0') +
+                                            energy.KiloWatts.ToString().Trim().PadLeft(6, '0') +
+                                            custo.ToString().Replace(".", "").PadLeft(7, '0'));
                 }
             }
             invoiceData.Close();
