@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using EnergiaEletricaAPI.API.Controllers;
 using EnergiaEletricaAPI.Models;
+using System.Globalization;
 
 namespace EnergiaEletricaAPI.Services
 {
@@ -13,8 +14,8 @@ namespace EnergiaEletricaAPI.Services
     {
         public void GenerateFileConverted ()
         {
-            StreamWriter invoiceData = new StreamWriter("C:\\Users\\treim\\OneDrive\\Documentos\\Utils\\invoice.data");
-            //StreamWriter invoiceData = new StreamWriter("C:\\Users\\Public\\Desafio\\invoice.data");
+            //StreamWriter invoiceData = new StreamWriter("C:\\Users\\treim\\OneDrive\\Documentos\\Utils\\invoice.data");
+            StreamWriter invoiceData = new StreamWriter("C:\\Users\\Public\\Desafio\\invoice.data");
 
 
             EnergyMeterController controller = new EnergyMeterController();
@@ -33,7 +34,7 @@ namespace EnergiaEletricaAPI.Services
                                             client.Complement.ToString().Trim().PadRight(20, ' ') +
                                             "##SSP" +
                                             energy.MeasureDate.ToString("dd") +
-                                            "          " +
+                                            DateTimeFormatInfo.CurrentInfo.GetMonthName(energy.MeasureDate.Month).PadRight(10, ' ') +
                                             energy.MeasureDate.ToString("yyyy") +
                                             energy.MeasureDate.ToString("hh") +
                                             energy.MeasureDate.ToString("mm") +
